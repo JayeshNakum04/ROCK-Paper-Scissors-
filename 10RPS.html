@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>10 RPS </title>
+       <link rel="stylesheet" href="10RPS.css">
+    </head>
+    <body>
+
+        <h1>RPS</h1>
+
+        <button onclick="
+            movebyPlayer('rock');
+        " class="move-button">
+        <img src="rock-emoji.png" class="move-icon">
+        </button>
+
+
+        <button onclick="
+            movebyPlayer('paper')
+        " class="move-button">
+        <img src="paper-emoji.png" class="move-icon">
+        </button>
+
+
+        <button onclick="
+            movebyPlayer('scissors');
+        " class="move-button">
+        <img src="scissors-emoji.png" class="move-icon">
+        </button>
+
+        <p class="js-outcome result"></p>
+
+        <p class="js-selected ">
+            
+        </p>
+
+        <p class="js-score score"></p>
+        
+        <button onclick="
+         score.Wins = 0;
+         score.Losses = 0;
+         score.Ties = 0;
+         alert('Scores had been reset');
+         displayScore();
+        " class="resetbutton">Reset score</button>
+
+        <script src="10RPS.js"> </script>
+
+    </body>
+
+   
+</html>
